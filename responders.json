@@ -1,4 +1,4 @@
-{
+[{
   "name": "Salesforce Integration",
   "version": "0.2",
   "author": "Layer 3 Communications",
@@ -19,6 +19,13 @@
     {
       "name": "hive_apikey",
       "description": "api key for TheHive api",
+      "type": "string",
+      "multi": false,
+      "required": true
+    },
+    {
+      "name": "allsight_endpoint",
+      "description": "Allsight 3 server",
       "type": "string",
       "multi": false,
       "required": true
@@ -79,5 +86,6 @@
       "multi": false,
       "required": true
     }
-  ]
-}
+  ],
+  "dockerImage": "layer3communications/hive-sf-bridge:latest"
+}]
