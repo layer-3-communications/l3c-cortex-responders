@@ -1,12 +1,13 @@
-[{
-  "name": "Salesforce Integration",
+[
+{
+  "name": "SalesForce Integration",
   "version": "0.2",
   "author": "Layer 3 Communications",
   "url": "https://github.com/layer-3-communications/hive-sf-bridge",
   "license": "BSD-3-Clause",
   "description": "Create a case in Salesforce from within The Hive",
   "dataTypeList": ["thehive:case"],
-  "command": "/opt/bin/hive-sf-bridge",
+  "dockerImage": "layer3communications/hive-sf-bridge:latest",
   "baseConfig": "SalesforceIntegration",
   "configurationItems": [
     {
@@ -86,6 +87,6 @@
       "multi": false,
       "required": true
     }
-  ],
-  "dockerImage": "layer3communications/hive-sf-bridge:latest"
-}]
+  ]
+}
+]
